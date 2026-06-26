@@ -1,0 +1,30 @@
+# ── Secrets — NEVER commit these ─────────────────────────────────────────────
+.env
+kaggle.json
+*.key
+*.pem
+
+# ── Python ────────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.so
+.Python
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
+*.pyc
+
+# ── Data files (large; use a data lake / object store instead) ────────────────
+data/*.csv
+data/*.parquet
+data/daily_summary_report/
+
+# ── Docker ────────────────────────────────────────────────────────────────────
+*.log
+
+# ── IDE ───────────────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
